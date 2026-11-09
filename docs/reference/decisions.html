@@ -2,11 +2,11 @@
 <!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Decision register · Le Boat</title><meta name="description" content="Decision register — the experimental Le Boat design and build record.">
-<link rel="stylesheet" href="../assets/style.css"></head><body>
+<link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site-header"><a class="wordmark" href="../index.html">le boat<span>Toronto · a work in progress</span></a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">The brief</a><a href="https://github.com/range-et/le-boat">GitHub ↗</a></nav></header>
-<main id="content" class="document"><a class="eyebrow back" href="../index.html">← Project home</a><h1>Decision register</h1>
-<p>Updated November 8, 2026. “Provisional” means a design target to investigate, not an achieved result.</p>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Decision register</h1>
+<p>Updated November 8, 2026. Provisional values require calculations and tests.</p>
 <table>
 <thead>
 <tr>
@@ -18,53 +18,73 @@
 <tbody>
 <tr>
 <td>D01</td>
-<td>Wind supplies all propulsion; radio and servos may use a battery</td>
-<td>Confirmed project intent</td>
+<td>Wind supplies all propulsion. radio and servos may use a battery</td>
+<td>Selected project intent</td>
 </tr>
 <tr>
 <td>D02</td>
 <td>Love Park is the intended neighbourhood sailing site</td>
-<td>Confirmed intent; access and current conditions unverified</td>
+<td>Selected intent. access and current conditions unverified</td>
 </tr>
 <tr>
 <td>D03</td>
 <td>Use published 200–600 mm depth as background context</td>
-<td>Official fact sheet; survey required for actual route</td>
+<td>Official fact sheet. survey required for actual route</td>
 </tr>
 <tr>
 <td>D04</td>
 <td>Investigate total loaded draft at or below 150 mm</td>
-<td>Provisional; 50 mm nominal margin at published shallowest point, not an operating guarantee</td>
+<td>Provisional. 50 mm nominal margin at the published shallowest point. Measure actual clearance.</td>
 </tr>
 <tr>
 <td>D05</td>
 <td>Explore 350–450 mm hull length first</td>
-<td>Provisional study envelope; equipment mass and stability may require a change</td>
+<td>Provisional study envelope. equipment mass and stability may require a change</td>
 </tr>
 <tr>
 <td>D06</td>
 <td>Home fabrication on an A1 mini, with reinforcement trials if useful</td>
-<td>Confirmed constraint; construction method open</td>
+<td>Selected constraint. construction method open</td>
 </tr>
 <tr>
 <td>D07</td>
 <td>Commercial reuse needs separate permission</td>
-<td>Confirmed by project owner; code PolyForm Noncommercial, CAD/docs CC BY-NC-SA</td>
+<td>Selected by project owner. code PolyForm Noncommercial, CAD/docs CC BY-NC-SA</td>
 </tr>
 <tr>
 <td>D08</td>
 <td>Make AI co-creation visible in documentation and journal</td>
-<td>Confirmed intent</td>
+<td>Selected intent</td>
 </tr>
 <tr>
 <td>D09</td>
 <td>Publish the build record on GitHub Pages</td>
-<td>Confirmed intent</td>
+<td>Selected intent</td>
 </tr>
 <tr>
 <td>D10</td>
-<td>Hawa studies remain bounded and independent of its 0.5 scope</td>
-<td>Retained from original brief</td>
+<td>Use Hawa for hull, keel and rudder CFD</td>
+<td>Selected. Boat cases pending. Upstream development scope remains separate.</td>
+</tr>
+<tr>
+<td>D11</td>
+<td>Use git-cad for CAD management</td>
+<td>Selected. Setup awaits an available workflow.</td>
+</tr>
+<tr>
+<td>D12</td>
+<td>Use Monad System for website UI</td>
+<td>Implemented with pinned CSS, components and theme controls.</td>
+</tr>
+<tr>
+<td>D13</td>
+<td>Compare designs against recorded objectives and constraints</td>
+<td>Baseline and numerical targets pending. See the tool and optimization plan.</td>
+</tr>
+<tr>
+<td>D14</td>
+<td>Accept collaboration through issues and pull requests</td>
+<td>Open to CAD, CFD, fabrication, sails, electronics, testing and documentation.</td>
 </tr>
 </tbody>
 </table>
@@ -77,6 +97,9 @@
 <li>Intended fiberglass weight and units, resin and bagging method if used.</li>
 <li>Acceptance criteria for heel, knockdown recovery, wind range and control endurance.</li>
 </ol>
-<p>Record each resolution with alternatives considered, rationale, evidence, date and affected CAD/test revisions. Do not quietly turn a provisional number into a validated specification.</p></main>
-<footer><span>An experiment in CAD, AI co-creation and making.</span><a href="LICENSE.html">Licenses & attribution</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<p>Record each decision with alternatives, reasons, evidence, date and affected revisions.
+Keep provisional values labelled until the required checks pass.
+See the <a href="tools-and-optimization.html">tool and optimization plan</a>.</p></main>
+<footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<script src="../assets/monad/monad.js"></script>
 </body></html>

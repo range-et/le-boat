@@ -2,14 +2,49 @@
 <!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contributing to Le Boat · Le Boat</title><meta name="description" content="Contributing to Le Boat — the experimental Le Boat design and build record.">
-<link rel="stylesheet" href="../assets/style.css"></head><body>
+<link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site-header"><a class="wordmark" href="../index.html">le boat<span>Toronto · a work in progress</span></a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">The brief</a><a href="https://github.com/range-et/le-boat">GitHub ↗</a></nav></header>
-<main id="content" class="document"><a class="eyebrow back" href="../index.html">← Project home</a><h1>Contributing to Le Boat</h1>
-<p>Start with an issue describing the design question or proposed change. Include units, configuration, source/provenance and evidence. Keep editable CAD alongside meaningful neutral exports and identify revisions. Avoid unreviewable binary-only changes when a drawing, parameter diff or screenshot can explain them.</p>
-<p>For test reports include procedure, conditions, measured values, uncertainty and failures. For code include a reproducible example or appropriate verification. For physical changes state how mass, flotation, draft, stability, seals and load paths are affected. Disclose substantial AI assistance using the journal template.</p>
-<p>By submitting a contribution for inclusion, you agree to license it under the applicable terms in LICENSE.md, retain third-party notices and confirm you have authority to do so. You keep your copyright. This is not a copyright assignment or a grant allowing the maintainer to sell separate rights to your contribution; commercial permissions may require each relevant rights holder's agreement.</p>
-<p>Do not add purchased plans, copied proprietary geometry, private conversations, credentials or assets without suitable permission. Cite reference designs without suggesting endorsement.</p>
-<p>Project documents are the source for the site reference pages. After editing them install the dependency as described in README, then run <code>.venv/bin/python scripts/build_site.py</code>, preview <code>docs/</code>, and include the generated changes. Keep journal entries dated and distinguish planned work from completed work.</p></main>
-<footer><span>An experiment in CAD, AI co-creation and making.</span><a href="LICENSE.html">Licenses & attribution</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Contributing to Le Boat</h1>
+<p>Contributions are welcome in CAD, CFD, fabrication, sails, electronics, testing and documentation.
+Use <a href="https://github.com/range-et/le-boat/issues">repository issues</a> to discuss tasks.
+Submit changes through a pull request.</p>
+<h2>Before you start</h2>
+<p>Read the <a href="design-brief.html">design brief</a> and <a href="tools-and-optimization.html">tool plan</a>.
+Check the <a href="decisions.html">decision register</a> for open questions.
+Describe the design question and proposed change in an issue.
+Keep the work small enough to review.</p>
+<h2>Required records</h2>
+<ul>
+<li>CAD: editable source, units, parameter values, revision IDs and suitable exports.</li>
+<li>CFD: geometry revision, complete case settings, convergence evidence and result data.</li>
+<li>Fabrication: materials, settings, measured masses and assembly notes.</li>
+<li>Tests: procedure, conditions, acceptance criteria, measurements, uncertainty and failures.</li>
+<li>Code: a reproducible example and checks appropriate to the change.</li>
+<li>AI use: significant contributions and completed checks from the journal template.</li>
+</ul>
+<p>For physical changes, describe effects on draft, mass, stability, seals and structural loads.
+Use git-cad for CAD management when its required workflow is available.
+Use Hawa for CFD and Monad System for website UI.
+Record unavailable functions and temporary manual procedures.</p>
+<h2>Licenses</h2>
+<p>Submit only material that you have authority to license.
+Contributions for inclusion use the applicable terms in <a href="LICENSE.html">LICENSE.md</a>.
+Keep third-party notices.
+You retain copyright in your contribution.
+Separate commercial permission can require agreement from each relevant rights holder.
+The maintainer receives no automatic right to sell licenses for your contribution.</p>
+<p>Exclude proprietary plans, copied geometry, credentials and private conversations unless suitable permission applies.
+Cite reference designs and identify their sources.</p>
+<h2>Documentation and website</h2>
+<p>Use short, direct English with ASD-STE100 sentence structure.
+Keep necessary technical terms and explain uncommon terms.
+Avoid slogans, marketing claims and contrast phrases such as “not X, but Y”.
+Keep standard third-party license texts unchanged.</p>
+<p>Project Markdown files supply the website reference pages.
+Follow the build steps in <a href="README.html">README.md</a>.
+Include generated page changes in the pull request.
+Date journal entries and label planned work separately from completed work.</p></main>
+<footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<script src="../assets/monad/monad.js"></script>
 </body></html>

@@ -1,36 +1,85 @@
 # Licensing and attribution
 
-Copyright © 2026 range-et and the respective contributors, to the extent copyright subsists in their contributions. Project: [Le Boat](https://github.com/range-et/le-boat).
+Copyright © 2026 range-et and the respective contributors, to the extent copyright subsists in their contributions.
+Project: [Le Boat](https://github.com/range-et/le-boat).
 
 ## License map
 
 | Material | License |
 | --- | --- |
-| Original CAD source, Grasshopper design definitions, model exports, meshes, drawings, sail patterns and original visual assets | [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt) |
-| README, brief, project documentation, journal and website prose | CC BY-NC-SA 4.0 |
-| Original executable code, including Python/Rhino scripts, geometry generators, website HTML structure/CSS/JavaScript and build/workflow code | [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
-| Third-party material | Its own applicable terms; not relicensed by this repository |
+| Original CAD, Grasshopper design definitions, exports, meshes, drawings, sail patterns and visual assets | [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt) |
+| Project documentation, journal and website prose | CC BY-NC-SA 4.0 |
+| Original executable code, including geometry scripts, HTML structure, CSS, JavaScript and build/workflow code | [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
+| Third-party files | Their applicable upstream terms. See [third-party notices](THIRD_PARTY_NOTICES.md). |
 
-A file-specific notice takes precedence. Embedded prose and visual content keep their content license when included in website code. Future CAD artifacts must carry license/provenance information in a companion notice or metadata. Geometry-generation code follows the software license; generated model files follow the CAD license insofar as project rights subsist. Do not assume the license overrides third-party component rights.
+A file-specific notice takes precedence.
+Website prose and images keep their content license when embedded in code.
+Future CAD files must include license and source information in metadata or a companion notice.
+Geometry scripts use the software license.
+Generated models use the CAD license to the extent project rights subsist.
+Third-party rights remain applicable.
+
+Monad CSS and JavaScript retain the upstream MIT license.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the files, revision and license.
+
+## Attribution
 
 Required Notice: Copyright 2026 range-et and the respective contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0.
 
-The Required Notice above accompanies original software under PolyForm's Notices provision. Retain it, and the software license text or canonical URL, when distributing any part of the software. For CC material, retain supplied attribution, the license link and warranty notice, identify changes, and license shared adaptations under the required same/compatible terms.
+Retain the Required Notice when distributing original software under PolyForm's Notices provision.
+Include the software license text or its canonical URL.
 
-Suggested content credit: “Based on Le Boat by range-et and contributors, https://github.com/range-et/le-boat, CC BY-NC-SA 4.0. Changes: [describe]. Experimental; provided as is.” Include credit with distributed files and build documentation. A credit label on a built boat is encouraged where practical; this request is not an additional CC license restriction.
+For CC material, retain supplied attribution, the license link and warranty notice.
+Identify changes.
+License shared adaptations under the same or compatible terms required by CC BY-NC-SA 4.0.
+
+Suggested content credit:
+
+> Based on Le Boat by range-et and contributors. Source: https://github.com/range-et/le-boat. License: CC BY-NC-SA 4.0. Changes: [describe]. Experimental. Provided as is.
+
+Include credit with distributed files and build documentation.
+A credit label on a built boat is encouraged where practical.
+This request adds no CC license restriction.
 
 ## Commercial permission
 
-The project owner's policy is that commercial reuse outside the published grants requires separate written permission. Attribution by itself is insufficient. Describe the intended use, files, modifications, distribution and scale in a [repository issue](https://github.com/range-et/le-boat/issues). Permission must come from all relevant rights holders; the maintainer cannot license someone else's rights. No separate commercial grant is made here.
+Commercial reuse outside the published grants requires separate written permission.
+Attribution alone does not grant that permission.
+Describe the proposed use, files, modifications, distribution and scale in a [repository issue](https://github.com/range-et/le-boat/issues).
+Obtain agreement from all relevant rights holders.
+The maintainer can grant only rights that the maintainer controls.
+This repository grants no separate commercial license.
 
-Read the actual licenses for their definitions and exceptions. CC NonCommercial concerns commercial advantage or monetary compensation, not merely whether an activity makes a profit. PolyForm also expressly permits certain organization uses; its definitions and permissions differ from CC. This policy summary does not add restrictions to either standard license. Noncommercial restrictions mean the project should be described as source-available, not OSI open source or unrestricted open hardware.
+Read the standard licenses for their definitions and exceptions.
+CC NonCommercial concerns commercial advantage or monetary compensation.
+An activity can fall outside that grant even when it makes no profit.
+PolyForm expressly permits certain organization uses.
+Its definitions and permissions differ from CC.
+This summary adds no restriction to either license.
+Describe Le Boat as source-available.
+Its noncommercial restrictions fall outside OSI open-source and unrestricted open-hardware terms.
 
-## Limits and choice of licenses
+## License choice and limits
 
-CC is used for design/documentation; a software-specific license is used for code, consistent with [Creative Commons' software guidance](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software). MIT, Apache and CERN OHL permit commercial reuse and therefore would not reserve commercial permission as requested. ShareAlike keeps shared CC adaptations under matching terms; it does not make the code copyleft.
+[Creative Commons recommends software-specific licenses for software](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software).
+Le Boat therefore separates code from design and documentation.
+MIT, Apache and CERN OHL permit commercial reuse.
+Those licenses would not reserve commercial permission as the owner requested.
+CC ShareAlike applies to shared content adaptations under its terms.
+The selected software license has separate conditions.
 
-These licenses operate only where the relevant legal rights exist. Functional boat features, manufactured objects and AI-assisted output can raise copyright, design-right and other questions. CC does not grant patent or trademark rights. Publishing under an NC license cannot guarantee control over every physical boat or every use of an idea. Obtain legal review before relying on this arrangement for commercial manufacture or enforcement.
+The licenses apply only where relevant legal rights exist.
+Functional features, manufactured objects and AI-assisted output can raise questions about copyright, design rights and other protection.
+CC grants no patent or trademark rights.
+An NC license cannot guarantee control over every physical boat or use of an idea.
+Obtain legal review before relying on these terms for commercial manufacture or enforcement.
 
-Both licenses include warranty/liability language; see also [DISCLAIMER.md](DISCLAIMER.md). Such language applies only as far as the law allows, and cannot guarantee that no liability can arise. Standard license grants generally cannot simply be withdrawn from recipients already complying with them. Contributors retain their rights; submit only material you can license.
+Both licenses contain warranty and liability terms.
+See [DISCLAIMER.md](DISCLAIMER.md) for the project notice.
+These terms apply only as far as the law allows.
+They cannot guarantee that no liability arises.
+Standard license grants generally remain available to recipients who comply with their terms.
+Contributors retain their rights.
+Submit only material that you have authority to license.
 
 Official references: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/), [CC legal code](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en), [PolyForm Noncommercial](https://polyformproject.org/licenses/noncommercial/1.0.0).

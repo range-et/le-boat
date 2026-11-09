@@ -2,35 +2,97 @@
 <!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Le Boat · Le Boat</title><meta name="description" content="Le Boat — the experimental Le Boat design and build record.">
-<link rel="stylesheet" href="../assets/style.css"></head><body>
+<link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site-header"><a class="wordmark" href="../index.html">le boat<span>Toronto · a work in progress</span></a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">The brief</a><a href="https://github.com/range-et/le-boat">GitHub ↗</a></nav></header>
-<main id="content" class="document"><a class="eyebrow back" href="../index.html">← Project home</a><h1>Le Boat</h1>
-<p>A little wind-powered yacht for a little patch of Toronto.</p>
-<p>Le Boat is an experimental, human–AI co-created RC sailboat for neighbourhood sailing at Love Park. Wind in cloth sails supplies all propulsion. A battery may power the receiver and servos for steering and sail trim; there is no propeller, auxiliary motor or powered recovery drive.</p>
-<p>The project is primarily CAD and physical making: Rhino geometry, parametric scripts, home fabrication, assembly, and honest records of what happens on the water. A smaller DragonForce 65 is a starting inspiration, not a class rule or a design to copy.</p>
-<p><strong>Status: brief and research. No hull has been designed, built or validated here yet.</strong> The current repository contains project documentation and the project website, not ready-to-print boat files.</p>
-<h2>Start here</h2>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Le Boat</h1>
+<p>Le Boat is an experimental RC sailboat for Love Park in Toronto.
+Wind provides all propulsion. A battery powers the radio receiver and servos for steering and sail trim.</p>
+<p>The project covers CAD, home fabrication, assembly, CFD and water tests.
+The DragonForce 65 provides an initial design reference.
+We will select dimensions from equipment mass, stability, pond depth and printer limits.</p>
+<p><strong>Status: design brief and research.</strong> The repository contains documentation and the website.
+Boat geometry, fabrication and water tests are pending.</p>
+<h2>Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Work</th>
+<th>Selected tool</th>
+<th>Current use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAD management</td>
+<td><a href="https://github.com/range-et/git-cad">git-cad</a></td>
+<td>Selected. Setup awaits an available workflow. The upstream project is in specification/prototype development.</td>
+</tr>
+<tr>
+<td>Website UI</td>
+<td><a href="https://github.com/range-et/monad_system">Monad System</a></td>
+<td>The site uses pinned Monad CSS, components and theme controls.</td>
+</tr>
+<tr>
+<td>CFD</td>
+<td><a href="https://github.com/range-et/hawa-cfd">Hawa</a></td>
+<td>Selected for hull, keel and rudder flow studies. Boat cases are pending.</td>
+</tr>
+</tbody>
+</table>
+<p>Use Rhino and Grasshopper to create geometry and define simulation cases.
+Read the <a href="tools-and-optimization.html">tool and optimization plan</a> for versions, interfaces and limits.</p>
+<h2>Project documents</h2>
 <ul>
-<li><a href="design-brief.html">Design brief</a>: requirements, candidate dimensions, systems and acceptance gates.</li>
-<li><a href="pond.html">Site research</a>: location, published depth, access questions and survey plan.</li>
-<li><a href="build-plan.html">Build and test plan</a>: work packages from mass budget to first sail.</li>
-<li><a href="decisions.html">Decision register</a>: what is settled and what needs evidence.</li>
-<li><a href="ai-co-creation.html">AI co-creation</a>: tools, human responsibility and evidence standards.</li>
-<li><a href="2026-11-08-project-foundation.html">Build journal</a>: first entry; future entries should include failures too.</li>
+<li><a href="design-brief.html">Design brief</a>: requirements and proposed dimensions.</li>
+<li><a href="pond.html">Site research</a>: published depth, access questions and survey plan.</li>
+<li><a href="build-plan.html">Build and test plan</a>: design, fabrication and test steps.</li>
+<li><a href="decisions.html">Decision register</a>: selected tools and open design choices.</li>
+<li><a href="ai-co-creation.html">AI use</a>: tool use, review and evidence records.</li>
+<li><a href="2026-11-08-project-foundation.html">Build journal</a>: project records.</li>
 <li><a href="LICENSE.html">Licensing</a> and <a href="DISCLAIMER.html">experimental-use notice</a>.</li>
 <li><a href="https://range-et.github.io/le-boat/">Project website</a>.</li>
 </ul>
-<h2>The pond shapes the boat</h2>
-<p>Google Maps identifies Love Park at 96 Queens Quay West. Waterfront Toronto publishes a pond depth of <strong>20–60 cm</strong>, approximately <strong>8–24 in</strong>, not 18 ft. Map imagery does not establish bottom clearance. We need to measure a usable route, account for obstructions and water levels, and confirm local operating rules before sailing. See the linked sources and unresolved questions in <a href="pond.html">site research</a>.</p>
-<h2>Made with AI, openly</h2>
-<p>This project deliberately tests how a person and AI tools can design, document and build something physical together. Codex helped develop this repository's brief, research, documentation and website. AI suggestions are proposals until checked; models, calculations, simulations and physical tests must be distinguished. People choose what gets built and remain responsible for those choices.</p>
-<h2>Reuse and commercial use</h2>
-<p>Original CAD, model exports, drawings, documentation, journal text and original imagery: <strong>CC BY-NC-SA 4.0</strong>. Original software, including geometry-generation scripts and website code: <strong>PolyForm Noncommercial 1.0.0</strong>. See <a href="LICENSE.html">LICENSE.md</a> for scope, attribution, third-party exclusions and the limits of protection for functional objects.</p>
-<p>Commercial use outside the published grants requires separate written permission from the relevant rights holders. Credit alone does not grant commercial permission. Start with a <a href="https://github.com/range-et/le-boat/issues">repository issue</a> describing the proposed use; an unanswered request grants no permission. These noncommercial terms mean the project is source-available, rather than OSI open source or unrestricted open hardware.</p>
-<h2>Contributing</h2>
-<p>Read <a href="CONTRIBUTING.html">CONTRIBUTING.md</a>. Share editable source, units, assumptions, evidence, provenance and your AI involvement. Do not present renders or simulation images as successful physical trials.</p>
-<h2>Website</h2>
-<p>The dependency-free static site is in <code>docs/</code>, served by GitHub Pages. Install the pinned build dependency once with <code>python3 -m venv .venv</code> and <code>.venv/bin/python -m pip install -r requirements-site.txt</code>. Run <code>.venv/bin/python scripts/build_site.py</code> after editing project documents; it generates browsable reference pages from the Markdown sources. Preview with <code>python3 -m http.server 8000 --directory docs</code> and open <code>http://localhost:8000</code>. The Pages workflow rebuilds and deploys on pushes to <code>main</code>; it can also be run manually.</p></main>
-<footer><span>An experiment in CAD, AI co-creation and making.</span><a href="LICENSE.html">Licenses & attribution</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<h2>Sailing site</h2>
+<p>Love Park is at 96 Queens Quay West.
+Waterfront Toronto lists a pond depth of <strong>20–60 cm</strong>, approximately <strong>8–24 inches</strong>.
+We must measure route clearances and check operating rules before sailing.
+See <a href="pond.html">site research</a> for sources and open questions.</p>
+<h2>Optimization</h2>
+<p>Compare hull and appendage designs against a recorded baseline.
+Measure drag, lateral force, stability, mass, draft, print cost and sailing control.
+Keep test conditions fixed when comparing designs.
+Select improvements within the safety and fabrication constraints.
+Record simulation uncertainty and check selected designs with physical tests.</p>
+<h2>Collaboration</h2>
+<p>Contributions are welcome in CAD, CFD, fabrication, sail design, testing and documentation.
+Start a <a href="https://github.com/range-et/le-boat/issues">repository issue</a> with a proposed task.
+Use a pull request to submit changes.
+Read <a href="CONTRIBUTING.html">CONTRIBUTING.md</a> for source files, evidence and license requirements.</p>
+<h2>AI use</h2>
+<p>People and AI tools develop this project together.
+Codex helped with research, documentation and website code.
+Record significant AI contributions and the checks applied to them.
+People decide what to build and test.</p>
+<h2>Licensing</h2>
+<p>Original CAD and documentation use <strong>CC BY-NC-SA 4.0</strong>.
+Original code uses <strong>PolyForm Noncommercial 1.0.0</strong>.
+Retain attribution under the applicable license.
+Commercial use outside the published grants requires separate written permission.
+Third-party files retain their own licenses.
+See <a href="LICENSE.html">LICENSE.md</a> for scope and limitations.</p>
+<h2>Website development</h2>
+<p>GitHub Pages serves the static files in <code>docs/</code>.
+Monad supplies the website UI styles and theme controls.
+The pinned files and MIT license are in <code>docs/assets/monad/</code>.</p>
+<ol>
+<li>Create the build environment: <code>python3 -m venv .venv</code>.</li>
+<li>Install the build dependency: <code>.venv/bin/python -m pip install -r requirements-site.txt</code>.</li>
+<li>Build reference pages: <code>.venv/bin/python scripts/build_site.py</code>.</li>
+<li>Start a preview: <code>python3 -m http.server 8000 --directory docs</code>.</li>
+<li>Open <code>http://localhost:8000</code>.</li>
+</ol>
+<p>Pushes to <code>main</code> build and deploy the site through GitHub Actions.</p></main>
+<footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+<script src="../assets/monad/monad.js"></script>
 </body></html>

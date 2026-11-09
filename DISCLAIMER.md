@@ -1,9 +1,22 @@
-# Experimental project notice
+# Experimental-use notice
 
-Le Boat is an experimental model sailboat project. Files, dimensions, calculations, software, instructions and other material are provided **as is and as available**, without warranties or conditions of any kind, to the fullest extent permitted by applicable law. No representation is made that the design is safe, accurate, fit for a particular purpose, watertight, stable, manufacturable, or compliant with any local rule.
+Le Boat is an experimental model sailboat project.
+Project material is provided as is and as available, to the fullest extent permitted by applicable law.
+Contributors and rights holders provide no warranties or conditions, whether express, implied or statutory, to that extent.
+This includes fitness, accuracy, safety, watertightness, stability, fabrication and compliance with local rules.
 
-To the fullest extent permitted by applicable law, contributors and rights holders disclaim liability for loss, injury, damage, costs or claims arising from the project, its fabrication, modification or use. Nothing here excludes liability or statutory rights that cannot legally be excluded. This notice does not promise complete immunity from liability or replace the applicable licenses.
+To the fullest extent permitted by law, contributors and rights holders disclaim liability for claims arising from fabrication, modification or use.
+This includes loss, injury, damage and costs.
+This notice does not exclude liability or statutory rights that the law protects from exclusion.
+The applicable licenses also govern warranty and liability terms.
 
-Builders and operators must independently assess the design, fabrication processes, materials, batteries, radio equipment, local permissions and operating conditions. This is an unmanned model boat, not a passenger craft or a lifesaving device. Establish retrieval from dry land and protect other park users, wildlife and park infrastructure. Use appropriate workshop controls for resin, dust, heated equipment and tools.
+Builders and operators must assess the design, materials, batteries, radio equipment, fabrication methods and operating conditions.
+Check local permissions before sailing.
+Use the boat as an unmanned model only.
+Establish recovery from dry land.
+Protect other park users, wildlife and infrastructure.
+Use suitable workshop controls for resin, dust, hot equipment and tools.
 
-No successful float, stability, endurance or sailing test has been recorded at this stage. Future results apply only to their documented configuration and conditions. AI-generated suggestions and simulation outputs do not constitute certification or professional engineering approval.
+Boat tests remain pending.
+Future results apply to the recorded configuration and conditions.
+AI suggestions and simulation results do not establish engineering approval or certification.

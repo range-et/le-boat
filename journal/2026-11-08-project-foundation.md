@@ -1,13 +1,27 @@
-# 001 — A pond sets the brief
+# 001 — Initial design brief
 
 November 8, 2026 · Phase: brief and research
 
-The starting idea is a small RC yacht inspired by the DragonForce 65, made at home on an A1 mini and potentially reinforced with glass/resin. The point is neighbourhood sailing at Love Park and learning how human–AI co-creation works when the result has to float.
+The owner proposed a small RC yacht inspired by the DragonForce 65.
+Home fabrication uses an A1 mini, with possible glass and resin reinforcement.
+Love Park is the intended sailing site.
+The project also studies how people and AI tools can design and build a physical object together.
 
-Today the brief became explicitly wind-only for propulsion, with battery-powered radio and trim/steering permitted. Google Maps confirmed the intended location. Waterfront Toronto's fact sheet put the pond at 20–60 cm deep, changing the appendage question: we need a shallow-draft boat rather than an automatically scaled deep keel. Actual route depths and operating arrangements still need checking.
+The initial brief specifies wind propulsion and battery-powered radio controls.
+Google Maps identified the location.
+Waterfront Toronto's fact sheet lists a pond depth of 20–60 cm.
+This range makes shallow draft an important design requirement.
+Actual route depths and operating arrangements need checks.
 
-We established noncommercial reuse with attribution and separate commercial permission, separated software licensing from design/documentation, and created the project website and documentation structure. The 350–450 mm length study and 150 mm total draft target are provisional. No CAD geometry, purchases, print trials, simulations or sailing tests were completed in this entry.
+The owner selected noncommercial reuse with attribution and separate commercial permission.
+The project established separate licenses for code and CAD/documentation.
+The first website and build record accompanied the brief.
+The proposed 350–450 mm hull length and 150 mm loaded draft require further study.
+Boat CAD, material purchases, fabrication samples, CFD and water tests remained pending.
 
-AI involvement: Codex assisted with research, brief development, documentation and site implementation. The owner supplied project intent and clarified commercial licensing. No completed technical review of a hull or physical test is implied.
+AI use: Codex helped with research, documentation and website code.
+The owner supplied the project intent and commercial licensing requirement.
+The record contains no completed hull review or physical test.
 
-Next evidence: site/access check, equipment masses, initial displacement budget and a comparison of shallow appendage/ballast arrangements. The original “75oz fiberglass” note remains unresolved.
+Next tasks: check site access, measure equipment masses and compare shallow ballast arrangements.
+The original “75oz fiberglass” specification remains unresolved.
