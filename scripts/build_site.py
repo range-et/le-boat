@@ -51,7 +51,7 @@ def main():
 <title>{escape(title)} · Le Boat</title><meta name="description" content="{escape(title)} — the experimental Le Boat design and build record.">
 <link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">About the boat</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
 <main id="content" class="document"><a class="back" href="../index.html">← Project home</a>{body}</main>
 <footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
 <script src="../assets/monad/monad.js"></script>

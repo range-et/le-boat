@@ -1,105 +1,67 @@
 <!doctype html>
 <!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Decision register · Le Boat</title><meta name="description" content="Decision register — the experimental Le Boat design and build record.">
+<title>Current project notes · Le Boat</title><meta name="description" content="Current project notes — the experimental Le Boat design and build record.">
 <link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
-<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Decision register</h1>
-<p>Updated November 8, 2026. Provisional values require calculations and tests.</p>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">About the boat</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Current project notes</h1>
+<p>Updated November 8, 2026.</p>
 <table>
 <thead>
 <tr>
-<th>ID</th>
-<th>Decision</th>
-<th>State / evidence needed</th>
+<th>Part of the project</th>
+<th>Current choice or status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>D01</td>
-<td>Wind supplies all propulsion. radio and servos may use a battery</td>
-<td>Selected project intent</td>
+<td>Boat</td>
+<td>Small RC sailboat for Love Park. Wind provides propulsion.</td>
 </tr>
 <tr>
-<td>D02</td>
-<td>Love Park is the intended neighbourhood sailing site</td>
-<td>Selected intent. access and current conditions unverified</td>
+<td>Printer</td>
+<td>I’m using a Bambu A1 mini. Printed parts will fit its 180 mm build volume.</td>
 </tr>
 <tr>
-<td>D03</td>
-<td>Use published 200–600 mm depth as background context</td>
-<td>Official fact sheet. survey required for actual route</td>
+<td>Hull and rig</td>
+<td>Dimensions and layout are still open. The DragonForce 65 is an initial reference.</td>
 </tr>
 <tr>
-<td>D04</td>
-<td>Investigate total loaded draft at or below 150 mm</td>
-<td>Provisional. 50 mm nominal margin at the published shallowest point. Measure actual clearance.</td>
+<td>Keel and ballast</td>
+<td>Shallow-water arrangement still to be explored.</td>
 </tr>
 <tr>
-<td>D05</td>
-<td>Explore 350–450 mm hull length first</td>
-<td>Provisional study envelope. equipment mass and stability may require a change</td>
+<td>Construction</td>
+<td>Printed parts, with possible fiberglass/resin reinforcement.</td>
 </tr>
 <tr>
-<td>D06</td>
-<td>Home fabrication on an A1 mini, with reinforcement trials if useful</td>
-<td>Selected constraint. construction method open</td>
+<td>CAD</td>
+<td>Rhino and Grasshopper, with git-cad for management. Setup is pending.</td>
 </tr>
 <tr>
-<td>D07</td>
-<td>Commercial reuse needs separate permission</td>
-<td>Selected by project owner. code PolyForm Noncommercial, CAD/docs CC BY-NC-SA</td>
+<td>CFD</td>
+<td>Hawa for hull and appendage experiments. Boat cases are pending.</td>
 </tr>
 <tr>
-<td>D08</td>
-<td>Make AI co-creation visible in documentation and journal</td>
-<td>Selected intent</td>
+<td>Website</td>
+<td>Build journal on GitHub Pages, using Monad System.</td>
 </tr>
 <tr>
-<td>D09</td>
-<td>Publish the build record on GitHub Pages</td>
-<td>Selected intent</td>
+<td>Collaboration</td>
+<td>Ideas, experiments and contributions are welcome.</td>
 </tr>
 <tr>
-<td>D10</td>
-<td>Use Hawa for hull, keel and rudder CFD</td>
-<td>Selected. Boat cases pending. Upstream development scope remains separate.</td>
+<td>AI</td>
+<td>AI contributions remain visible in the build record.</td>
 </tr>
 <tr>
-<td>D11</td>
-<td>Use git-cad for CAD management</td>
-<td>Selected. Setup awaits an available workflow.</td>
-</tr>
-<tr>
-<td>D12</td>
-<td>Use Monad System for website UI</td>
-<td>Implemented with pinned CSS, components and theme controls.</td>
-</tr>
-<tr>
-<td>D13</td>
-<td>Compare designs against recorded objectives and constraints</td>
-<td>Baseline and numerical targets pending. See the tool and optimization plan.</td>
-</tr>
-<tr>
-<td>D14</td>
-<td>Accept collaboration through issues and pull requests</td>
-<td>Open to CAD, CFD, fabrication, sails, electronics, testing and documentation.</td>
+<td>Licensing</td>
+<td>Noncommercial reuse with attribution. Separate permission for commercial use outside the license grants.</td>
 </tr>
 </tbody>
 </table>
-<h2>Decisions before detailed hull design</h2>
-<ol>
-<li>Verified sailing route, depth and recovery/access arrangements.</li>
-<li>Equipment shortlist, measured mass, budget and battery endurance target.</li>
-<li>Displacement, beam, ballast mass/lever arm, appendage architecture and rig size.</li>
-<li>Filament, shell/joint design and whether the print is structure or tooling.</li>
-<li>Intended fiberglass weight and units, resin and bagging method if used.</li>
-<li>Acceptance criteria for heel, knockdown recovery, wind range and control endurance.</li>
-</ol>
-<p>Record each decision with alternatives, reasons, evidence, date and affected revisions.
-Keep provisional values labelled until the required checks pass.
-See the <a href="tools-and-optimization.html">tool and optimization plan</a>.</p></main>
+<p>Next: hull layout, equipment weight and the keel/ballast arrangement.</p></main>
 <footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
 <script src="../assets/monad/monad.js"></script>
 </body></html>

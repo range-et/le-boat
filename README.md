@@ -1,74 +1,50 @@
 # Le Boat
 
-Le Boat is an experimental RC sailboat for Love Park in Toronto.
-Wind provides all propulsion. A battery powers the radio receiver and servos for steering and sail trim.
+I’m building a small, wind-powered RC sailboat for Love Park in Toronto.
+This repository and website record my build journey.
+The project is collaborative, and ideas and contributions are welcome.
 
-The project covers CAD, home fabrication, assembly, CFD and water tests.
-The DragonForce 65 provides an initial design reference.
-We will select dimensions from equipment mass, stability, pond depth and printer limits.
+## Where things stand
 
-**Status: design brief and research.** The repository contains documentation and the website.
-Boat geometry, fabrication and water tests are pending.
+The project is at the brief and research stage.
+The website and initial notes are in place.
+Boat CAD, prints, simulations and water tests are still ahead.
+
+## The build
+
+I’m using a **Bambu A1 mini**, with a **180 × 180 × 180 mm** build volume.
+The printed parts and any hull sections will fit that printer.
+The shallow pond affects the keel, rudder and ballast arrangement.
+Dimensions, equipment and the construction method are still open.
+
+The DragonForce 65 is an initial reference.
+Wind will provide propulsion, with battery-powered radio controls for steering and sail trim.
+I’m considering fiberglass and resin reinforcement for the printed hull.
 
 ## Tools
 
-| Work | Selected tool | Current use |
-| --- | --- | --- |
-| CAD management | [git-cad](https://github.com/range-et/git-cad) | Selected. Setup awaits an available workflow. The upstream project is in specification/prototype development. |
-| Website UI | [Monad System](https://github.com/range-et/monad_system) | The site uses pinned Monad CSS, components and theme controls. |
-| CFD | [Hawa](https://github.com/range-et/hawa-cfd) | Selected for hull, keel and rudder flow studies. Boat cases are pending. |
+- Rhino and Grasshopper for geometry.
+- [git-cad](https://github.com/range-et/git-cad) for CAD management.
+- [Hawa](https://github.com/range-et/hawa-cfd) for hull and appendage CFD.
+- [Monad System](https://github.com/range-et/monad_system) for the website UI.
 
-Use Rhino and Grasshopper to create geometry and define simulation cases.
-Read the [tool and optimization plan](project/tools-and-optimization.md) for versions, interfaces and limits.
+The [tool notes](project/tools-and-optimization.md) record versions and setup.
+AI tools are part of the build process.
+Codex helped with research, documentation and the website.
 
-## Project documents
+## Follow the build
 
-- [Design brief](design-brief.md): requirements and proposed dimensions.
-- [Site research](project/pond.md): published depth, access questions and survey plan.
-- [Build and test plan](project/build-plan.md): design, fabrication and test steps.
-- [Decision register](project/decisions.md): selected tools and open design choices.
-- [AI use](project/ai-co-creation.md): tool use, review and evidence records.
-- [Build journal](journal/2026-11-08-project-foundation.md): project records.
-- [Licensing](LICENSE.md) and [experimental-use notice](DISCLAIMER.md).
-- [Project website](https://range-et.github.io/le-boat/).
+- [Website and journal](https://range-et.github.io/le-boat/).
+- [About the boat](design-brief.md).
+- [Current project notes](project/decisions.md).
+- [Next build steps](project/build-plan.md).
+- [Love Park](project/pond.md).
+- [AI use](project/ai-co-creation.md).
 
-## Sailing site
-
-Love Park is at 96 Queens Quay West.
-Waterfront Toronto lists a pond depth of **20–60 cm**, approximately **8–24 inches**.
-We must measure route clearances and check operating rules before sailing.
-See [site research](project/pond.md) for sources and open questions.
-
-## Optimization
-
-Compare hull and appendage designs against a recorded baseline.
-Measure drag, lateral force, stability, mass, draft, print cost and sailing control.
-Keep test conditions fixed when comparing designs.
-Select improvements within the safety and fabrication constraints.
-Record simulation uncertainty and check selected designs with physical tests.
-
-## Collaboration
-
-Contributions are welcome in CAD, CFD, fabrication, sail design, testing and documentation.
-Start a [repository issue](https://github.com/range-et/le-boat/issues) with a proposed task.
-Use a pull request to submit changes.
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for source files, evidence and license requirements.
-
-## AI use
-
-People and AI tools develop this project together.
-Codex helped with research, documentation and website code.
-Record significant AI contributions and the checks applied to them.
-People decide what to build and test.
-
-## Licensing
-
-Original CAD and documentation use **CC BY-NC-SA 4.0**.
-Original code uses **PolyForm Noncommercial 1.0.0**.
-Retain attribution under the applicable license.
-Commercial use outside the published grants requires separate written permission.
-Third-party files retain their own licenses.
-See [LICENSE.md](LICENSE.md) for scope and limitations.
+[Ideas and contributions](CONTRIBUTING.md) are welcome through issues and pull requests.
+Original CAD and documentation use CC BY-NC-SA 4.0.
+Original code uses PolyForm Noncommercial 1.0.0.
+See [licensing](LICENSE.md) and the [experimental-use notice](DISCLAIMER.md).
 
 ## Website development
 

@@ -14,3 +14,9 @@ Use Monad tokens and components. Keep its vendored files unchanged.
 Record upstream versions and retain third-party licenses.
 Rebuild website reference pages after documentation changes.
 Label planned work, calculations, simulations and physical measurements.
+
+This site is the owner's collaborative build journal.
+Keep public project descriptions brief and descriptive.
+State the owner's equipment and constraints as facts about this build.
+Do not add operator requirements, competition rules, formal acceptance gates or transport instructions.
+Keep technical experiments in context with the build's current progress.

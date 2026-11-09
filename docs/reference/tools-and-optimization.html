@@ -1,129 +1,33 @@
 <!doctype html>
 <!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tools and optimization · Le Boat</title><meta name="description" content="Tools and optimization — the experimental Le Boat design and build record.">
+<title>Tool notes · Le Boat</title><meta name="description" content="Tool notes — the experimental Le Boat design and build record.">
 <link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
-<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Tools and optimization</h1>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">About the boat</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Tool notes</h1>
 <p>Updated November 8, 2026.</p>
-<h2>CAD management: git-cad</h2>
-<p>Use <a href="https://github.com/range-et/git-cad">git-cad</a> to manage CAD changes.
-The upstream project is in specification/prototype development.
-Its specification describes native snapshots, OpenUSD exchange, visual comparisons and conflict resolution.
-Rhino and Blender are the initial adapter targets.
-Le Boat does not yet contain an installed git-cad workflow.</p>
-<p>Before the first CAD baseline, check the available implementation against the specification.
-Test a save, change, comparison and restore cycle with disposable geometry.
-Record units, axes, waterline datum, object IDs and the git-cad revision.
-Keep editable native files, parameter values and neutral exports together.
-Link each design revision to its drawings, mass budget, simulation cases and test records.
-Record any unavailable function and its temporary manual procedure.</p>
-<p>Reference revision: <a href="https://github.com/range-et/git-cad/tree/97b81437a5142bcb9dba4cdee71a97eb93bab12c">97b8143</a>.
-This reference does not establish that the proposed functions are implemented.</p>
-<h2>Website UI: Monad System</h2>
-<p>Use <a href="https://github.com/range-et/monad_system">Monad System</a> for tokens, type, layout and components.
-The site loads its generated CSS and JavaScript locally.
-It uses Monad header and button components, Strata color tokens and the theme control.
-Project CSS defines page layout and responsive behaviour.
-Keep colors in upstream tokens and use Helvetica system fonts.</p>
-<p>Vendored revision: <a href="https://github.com/range-et/monad_system/tree/358d0559da407897957a5817b24f9ebd8774b791">358d055</a>.
-Files: <code>docs/assets/monad/monad.css</code>, <code>monad.js</code> and <code>LICENSE</code>.
-Keep generated files unchanged.
-For updates, copy both build files and the license from one upstream revision.
-Update this record and check the site in both themes and at narrow widths.</p>
-<h2>CFD: Hawa</h2>
-<p>Use <a href="https://github.com/range-et/hawa-cfd">Hawa</a> for hull, keel and rudder flow studies in Rhino and Grasshopper.
-The upstream solver uses the lattice Boltzmann method.
-Start with a simple appendage case and check the available force outputs.
-Define each case before comparing designs.</p>
-<p>Record these inputs and outputs:</p>
-<ul>
-<li>Geometry revision and dimensions.</li>
-<li>Fluid properties, speed and Reynolds number.</li>
-<li>Domain size, boundaries, grid spacing and time step.</li>
-<li>Solver settings, device, run duration and convergence checks.</li>
-<li>Force axes, drag, lateral force and averaging interval, where supported.</li>
-<li>Grid and domain sensitivity, uncertainty and known limitations.</li>
-</ul>
-<p>Reference revision: <a href="https://github.com/range-et/hawa-cfd/tree/c04d7db6529330687cc658838b0bb0b5d00b69ad">c04d7db</a>.
-Record the installed revision when creating a case.
-No Le Boat CFD case or optimization result exists yet.</p>
-<p>A submerged single-fluid model can compare underwater flow within its assumptions.
-Free-surface waves, flotation and sail-driven motion need suitable models or physical tests.
-Check solver capabilities before selecting an objective.
-Le Boat work does not change Hawa's development scope.</p>
-<h2>Optimization procedure</h2>
-<ol>
-<li>Define a baseline hull, appendages, ballast and rig.</li>
-<li>Check mass, displacement, draft, freeboard and stability.</li>
-<li>Select parameters and limits before running a search.</li>
-<li>Compare candidates under the same physical conditions.</li>
-<li>Check promising candidates with finer grids and larger domains.</li>
-<li>Build and test selected candidates.</li>
-<li>Record the selected design and reasons for the choice.</li>
-</ol>
-<p>Candidate parameters include hull beam, waterline shape, fin chord, fin section and rudder area.
-Keep displacement and intended operating conditions consistent during each comparison.
-Use several cases when performance changes with speed, heel or leeway.
-Leeway is the angle between the boat's heading and its direction through the water.</p>
-<h2>Objectives and constraints</h2>
-<table>
-<thead>
-<tr>
-<th>Measure</th>
-<th>Direction</th>
-<th>Required check</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hull and appendage drag</td>
-<td>Reduce at defined speed and attitude</td>
-<td>Compare converged results and uncertainty</td>
-</tr>
-<tr>
-<td>Keel lateral force</td>
-<td>Meet the required side force with acceptable drag</td>
-<td>Compare at defined leeway and heel</td>
-</tr>
-<tr>
-<td>Stability</td>
-<td>Maintain the selected righting and recovery criteria</td>
-<td>Calculate hydrostatics and test the assembly</td>
-</tr>
-<tr>
-<td>Draft</td>
-<td>Investigate 150 mm or less</td>
-<td>Check loaded geometry against a measured route</td>
-</tr>
-<tr>
-<td>Mass</td>
-<td>Meet displacement and ballast budgets</td>
-<td>Weigh the completed parts</td>
-</tr>
-<tr>
-<td>Fabrication</td>
-<td>Reduce material, print time and difficult joints</td>
-<td>Compare print layouts and sample parts</td>
-</tr>
-<tr>
-<td>Handling</td>
-<td>Improve tacking and steering</td>
-<td>Run repeatable sailing trials</td>
-</tr>
-</tbody>
-</table>
-<p>Evaluate these measures together.
-A drag reduction can increase weight, reduce stability or make a part difficult to build.
-Report those effects with the result.
-Choose numerical targets after the first mass budget and baseline cases.</p>
-<h2>Collaboration</h2>
-<p>Propose a task through a repository issue.
-Submit editable geometry, case settings, data and a short explanation with each contribution.
-Use the same baseline for shared comparisons.
-Keep failed cases and rejected candidates when they explain a design choice.
-Third-party tools retain their own licenses.</p></main>
+<h2>CAD</h2>
+<p>I’m using Rhino and Grasshopper for geometry, with <a href="https://github.com/range-et/git-cad">git-cad</a> for CAD management.
+The git-cad project is in specification/prototype development.
+Its setup for this boat remains pending.
+Reference revision: <a href="https://github.com/range-et/git-cad/tree/97b81437a5142bcb9dba4cdee71a97eb93bab12c">97b8143</a>.</p>
+<h2>CFD</h2>
+<p><a href="https://github.com/range-et/hawa-cfd">Hawa</a> will help explore flow around the hull, keel and rudder.
+I want to compare shapes as the design develops, including their effects on drag and lateral force.
+Weight, stability, shallow draft and printability will also affect the choices.
+Boat geometry and CFD cases are still ahead.</p>
+<p>The journal will include geometry revisions, case settings and results when these experiments start.
+A submerged flow study has limits, including the absence of free-surface waves and sail-driven motion.
+Physical tests will provide more information about the completed boat.
+Reference revision: <a href="https://github.com/range-et/hawa-cfd/tree/c04d7db6529330687cc658838b0bb0b5d00b69ad">c04d7db</a>.</p>
+<h2>Website</h2>
+<p>The site uses <a href="https://github.com/range-et/monad_system">Monad System</a> for its UI.
+The CSS, JavaScript and MIT license are stored in <code>docs/assets/monad/</code>.
+Vendored revision: <a href="https://github.com/range-et/monad_system/tree/358d0559da407897957a5817b24f9ebd8774b791">358d055</a>.
+Project CSS adds the page layout and responsive behaviour.</p>
+<p>For updates, copy both build files and the license from one upstream revision.
+Keep generated Monad files unchanged and update this version record.</p></main>
 <footer><span>Le Boat · Toronto</span><a href="LICENSE.html">Licenses & attribution</a><a href="THIRD_PARTY_NOTICES.html">Third-party notices</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
 <script src="../assets/monad/monad.js"></script>
 </body></html>

@@ -4,83 +4,46 @@
 <title>Le Boat · Le Boat</title><meta name="description" content="Le Boat — the experimental Le Boat design and build record.">
 <link rel="stylesheet" href="../assets/monad/monad.css"><link rel="stylesheet" href="../assets/style.css"></head><body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#tools">Tools</a><a href="../index.html#journal">Build journal</a><a href="design-brief.html">Design brief</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
+<header class="monad-header site-header"><a class="monad-header__name" href="../index.html">Le Boat</a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">About the boat</a><a href="https://github.com/range-et/le-boat">GitHub</a></nav><button class="atomos-btn atomos-btn--ghost atomos-btn--sm" type="button" data-mn-theme-toggle aria-label="Light theme" aria-pressed="false">Light theme</button></header>
 <main id="content" class="document"><a class="back" href="../index.html">← Project home</a><h1>Le Boat</h1>
-<p>Le Boat is an experimental RC sailboat for Love Park in Toronto.
-Wind provides all propulsion. A battery powers the radio receiver and servos for steering and sail trim.</p>
-<p>The project covers CAD, home fabrication, assembly, CFD and water tests.
-The DragonForce 65 provides an initial design reference.
-We will select dimensions from equipment mass, stability, pond depth and printer limits.</p>
-<p><strong>Status: design brief and research.</strong> The repository contains documentation and the website.
-Boat geometry, fabrication and water tests are pending.</p>
+<p>I’m building a small, wind-powered RC sailboat for Love Park in Toronto.
+This repository and website record my build journey.
+The project is collaborative, and ideas and contributions are welcome.</p>
+<h2>Where things stand</h2>
+<p>The project is at the brief and research stage.
+The website and initial notes are in place.
+Boat CAD, prints, simulations and water tests are still ahead.</p>
+<h2>The build</h2>
+<p>I’m using a <strong>Bambu A1 mini</strong>, with a <strong>180 × 180 × 180 mm</strong> build volume.
+The printed parts and any hull sections will fit that printer.
+The shallow pond affects the keel, rudder and ballast arrangement.
+Dimensions, equipment and the construction method are still open.</p>
+<p>The DragonForce 65 is an initial reference.
+Wind will provide propulsion, with battery-powered radio controls for steering and sail trim.
+I’m considering fiberglass and resin reinforcement for the printed hull.</p>
 <h2>Tools</h2>
-<table>
-<thead>
-<tr>
-<th>Work</th>
-<th>Selected tool</th>
-<th>Current use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAD management</td>
-<td><a href="https://github.com/range-et/git-cad">git-cad</a></td>
-<td>Selected. Setup awaits an available workflow. The upstream project is in specification/prototype development.</td>
-</tr>
-<tr>
-<td>Website UI</td>
-<td><a href="https://github.com/range-et/monad_system">Monad System</a></td>
-<td>The site uses pinned Monad CSS, components and theme controls.</td>
-</tr>
-<tr>
-<td>CFD</td>
-<td><a href="https://github.com/range-et/hawa-cfd">Hawa</a></td>
-<td>Selected for hull, keel and rudder flow studies. Boat cases are pending.</td>
-</tr>
-</tbody>
-</table>
-<p>Use Rhino and Grasshopper to create geometry and define simulation cases.
-Read the <a href="tools-and-optimization.html">tool and optimization plan</a> for versions, interfaces and limits.</p>
-<h2>Project documents</h2>
 <ul>
-<li><a href="design-brief.html">Design brief</a>: requirements and proposed dimensions.</li>
-<li><a href="pond.html">Site research</a>: published depth, access questions and survey plan.</li>
-<li><a href="build-plan.html">Build and test plan</a>: design, fabrication and test steps.</li>
-<li><a href="decisions.html">Decision register</a>: selected tools and open design choices.</li>
-<li><a href="ai-co-creation.html">AI use</a>: tool use, review and evidence records.</li>
-<li><a href="2026-11-08-project-foundation.html">Build journal</a>: project records.</li>
-<li><a href="LICENSE.html">Licensing</a> and <a href="DISCLAIMER.html">experimental-use notice</a>.</li>
-<li><a href="https://range-et.github.io/le-boat/">Project website</a>.</li>
+<li>Rhino and Grasshopper for geometry.</li>
+<li><a href="https://github.com/range-et/git-cad">git-cad</a> for CAD management.</li>
+<li><a href="https://github.com/range-et/hawa-cfd">Hawa</a> for hull and appendage CFD.</li>
+<li><a href="https://github.com/range-et/monad_system">Monad System</a> for the website UI.</li>
 </ul>
-<h2>Sailing site</h2>
-<p>Love Park is at 96 Queens Quay West.
-Waterfront Toronto lists a pond depth of <strong>20–60 cm</strong>, approximately <strong>8–24 inches</strong>.
-We must measure route clearances and check operating rules before sailing.
-See <a href="pond.html">site research</a> for sources and open questions.</p>
-<h2>Optimization</h2>
-<p>Compare hull and appendage designs against a recorded baseline.
-Measure drag, lateral force, stability, mass, draft, print cost and sailing control.
-Keep test conditions fixed when comparing designs.
-Select improvements within the safety and fabrication constraints.
-Record simulation uncertainty and check selected designs with physical tests.</p>
-<h2>Collaboration</h2>
-<p>Contributions are welcome in CAD, CFD, fabrication, sail design, testing and documentation.
-Start a <a href="https://github.com/range-et/le-boat/issues">repository issue</a> with a proposed task.
-Use a pull request to submit changes.
-Read <a href="CONTRIBUTING.html">CONTRIBUTING.md</a> for source files, evidence and license requirements.</p>
-<h2>AI use</h2>
-<p>People and AI tools develop this project together.
-Codex helped with research, documentation and website code.
-Record significant AI contributions and the checks applied to them.
-People decide what to build and test.</p>
-<h2>Licensing</h2>
-<p>Original CAD and documentation use <strong>CC BY-NC-SA 4.0</strong>.
-Original code uses <strong>PolyForm Noncommercial 1.0.0</strong>.
-Retain attribution under the applicable license.
-Commercial use outside the published grants requires separate written permission.
-Third-party files retain their own licenses.
-See <a href="LICENSE.html">LICENSE.md</a> for scope and limitations.</p>
+<p>The <a href="tools-and-optimization.html">tool notes</a> record versions and setup.
+AI tools are part of the build process.
+Codex helped with research, documentation and the website.</p>
+<h2>Follow the build</h2>
+<ul>
+<li><a href="https://range-et.github.io/le-boat/">Website and journal</a>.</li>
+<li><a href="design-brief.html">About the boat</a>.</li>
+<li><a href="decisions.html">Current project notes</a>.</li>
+<li><a href="build-plan.html">Next build steps</a>.</li>
+<li><a href="pond.html">Love Park</a>.</li>
+<li><a href="ai-co-creation.html">AI use</a>.</li>
+</ul>
+<p><a href="CONTRIBUTING.html">Ideas and contributions</a> are welcome through issues and pull requests.
+Original CAD and documentation use CC BY-NC-SA 4.0.
+Original code uses PolyForm Noncommercial 1.0.0.
+See <a href="LICENSE.html">licensing</a> and the <a href="DISCLAIMER.html">experimental-use notice</a>.</p>
 <h2>Website development</h2>
 <p>GitHub Pages serves the static files in <code>docs/</code>.
 Monad supplies the website UI styles and theme controls.
