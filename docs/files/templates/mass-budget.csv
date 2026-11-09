@@ -1,0 +1,17 @@
+component,quantity,estimated_unit_mass_g,measured_unit_mass_g,x_cg_mm,y_cg_mm,z_cg_mm,revision,notes
+hull shell,1,,,,,,,Include print seams
+deck and hatch,1,,,,,,,Include seals
+joints and adhesive,1,,,,,,,Measure cured mass
+laminate and coatings,1,,,,,,,If used
+keel fin and mount,1,,,,,,,Include retention hardware
+ballast,1,,,,,,,Select after non-ballast budget
+rudder and linkage,1,,,,,,,
+mast boom and fittings,1,,,,,,,
+sails and lines,1,,,,,,,
+receiver,1,,,,,,,
+sail servo or winch,1,,,,,,,
+rudder servo,1,,,,,,,
+battery,1,,,,,,,
+switch wiring connectors,1,,,,,,,
+fasteners and flotation,1,,,,,,,
+contingency,1,,,,,,,Track separately; no assumed CG

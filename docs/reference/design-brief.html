@@ -1,0 +1,288 @@
+<!doctype html>
+<!-- Required Notice: Copyright 2026 range-et and contributors. Le Boat — https://github.com/range-et/le-boat. Software licensed under PolyForm Noncommercial 1.0.0. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Boat design brief · Le Boat</title><meta name="description" content="Le Boat design brief — the experimental Le Boat design and build record.">
+<link rel="stylesheet" href="../assets/style.css"></head><body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="../index.html">le boat<span>Toronto · a work in progress</span></a><nav aria-label="Main"><a href="../index.html#journal">Build journal</a><a href="design-brief.html">The brief</a><a href="https://github.com/range-et/le-boat">GitHub ↗</a></nav></header>
+<main id="content" class="document"><a class="eyebrow back" href="../index.html">← Project home</a><h1>Le Boat design brief</h1>
+<p>November 8, 2026 · Revision 0.2 · Concept stage</p>
+<p>Design and build a small RC sailboat inspired by a smaller version of the
+DragonForce 65. The boat should be practical to manufacture and assemble at home,
+using a Bambu A1 mini for printed parts and potentially fiberglass reinforcement.
+The exact size, construction method and performance targets remain to be chosen.
+The intended setting is neighbourhood sailing on the Love Park pond in Toronto.
+This is an unmanned model yacht: wind in sails provides all propulsion. Battery
+power is allowed for the receiver, rudder servo and sail-trim actuator only; no
+propeller, auxiliary propulsion or powered recovery drive is included.</p>
+<h2>Design intent</h2>
+<p>Develop the boat as a complete assembly: hull, rudder, keel, ballast, mast and
+rigging, with provision for radio control and internal equipment. Use Rhino to
+explore the geometry alongside manufacturing limits, shell thickness, component
+weights, strength requirements and assembly details.</p>
+<p>This should also become a practical Hawa use case: investigate flow around a
+hull with its keel and rudder, while relating geometry choices to a boat that can
+actually be made. The boat design is its own project; it does not expand Hawa's
+current 0.5 development scope.</p>
+<h2>People, place and use</h2>
+<p>Design for someone who can carry the boat and transmitter from home, rig it at
+the pond edge, sail for a short session, recover it from dry land, and take it home
+without needing a car or waterside workshop. Carry protection, a removable rig,
+accessible controls and repairable parts belong in the design brief. Carry size,
+ready-to-sail time, session endurance and total cost need explicit targets after
+an equipment shortlist; none is yet a demonstrated capability.</p>
+<p>The intended water is Love Park at 96 Queens Quay West. Google Maps was checked
+for the location; <a href="https://www.waterfrontoronto.ca/sites/default/files/2023-06/Love%20Park%20Fact%20Sheet_0.pdf">Waterfront Toronto's fact sheet</a>
+gives pond depth as <strong>200–600 mm (about 8–24 inches)</strong>. The initial 18-foot claim
+conflicts with that source and is not used. Maps are not a depth survey. See
+<a href="pond.html">site research</a> for sources, operating-rule uncertainty and the
+required visit. Permission/access, actual water levels, obstacles and wind
+conditions remain unverified.</p>
+<h2>Provisional design envelope</h2>
+<p>These are proposed study inputs, not settled dimensions or approved plans.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Starting study</th>
+<th>How it becomes a requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hull length</td>
+<td>Explore 350–450 mm</td>
+<td>Equipment fit, displacement, transport and stability comparison</td>
+</tr>
+<tr>
+<td>Overall loaded draft</td>
+<td>Investigate at or below 150 mm, including ballast and rudder</td>
+<td>Verify a route with at least 50 mm clearance under all appendages; increase margin for measured uncertainty/conditions</td>
+</tr>
+<tr>
+<td>Beam, hull depth and freeboard</td>
+<td>Open</td>
+<td>Hydrostatics, downflooding, heel and access layout</td>
+</tr>
+<tr>
+<td>Sailing displacement and ballast</td>
+<td>Open</td>
+<td>Measured equipment masses plus finished structure/rig and contingency</td>
+</tr>
+<tr>
+<td>Rig and sail area</td>
+<td>Open; investigate a simple removable rig and smaller wind option</td>
+<td>Match righting capacity, sheeting and observed gust response</td>
+</tr>
+<tr>
+<td>Wind range and endurance</td>
+<td>Open</td>
+<td>Controlled trials with recorded wind, gusts and battery use</td>
+</tr>
+<tr>
+<td>Cost and setup time</td>
+<td>Open</td>
+<td>BOM and a timed dry setup trial</td>
+</tr>
+</tbody>
+</table>
+<p>A published shallow point of 200 mm minus a proposed 150 mm draft leaves only a
+nominal 50 mm margin. That arithmetic is not evidence of route clearance. Measure
+and revise; a shorter fin reduces the ballast lever arm and may make stability,
+weight or rig targets incompatible. Do not solve draft by simply shortening a
+DragonForce-style keel without reevaluating the complete boat.</p>
+<h2>Whole-boat systems and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Design work and interfaces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hull/deck</td>
+<td>Displacement, trim/freeboard, shell joints, hatch coaming/gasket, reserve flotation, drainage and handling</td>
+</tr>
+<tr>
+<td>Keel/ballast</td>
+<td>Lateral resistance, righting moment, secure ballast containment, grounding load path, replaceable/removable attachment and watertight trunk</td>
+</tr>
+<tr>
+<td>Rudder</td>
+<td>Total draft, section/area, stock support, sealed penetration, servo torque/travel and mechanical stops</td>
+</tr>
+<tr>
+<td>Rig/sails</td>
+<td>Mast support, boom, sail material/patterns, standing/running rigging, tension adjustment, sail balance, sheet routing and unobstructed release</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>Compatible receiver/battery/actuators, linkage and sheet travel, current draw, switch access, antenna routing, failsafe and low-battery behaviour</td>
+</tr>
+<tr>
+<td>Recovery/transport</td>
+<td>Visible hull, retained flotation, a reachable recovery point, shore retrieval equipment and protective cradle/rig stowage</td>
+</tr>
+<tr>
+<td>Fabrication/maintenance</td>
+<td>Printable segments, tolerances, alignment, bonding/sealing, reinforcement, replaceable wear parts and access for repairs</td>
+</tr>
+</tbody>
+</table>
+<p>No propulsion motor also means no motor to rescue a becalmed boat. Prove a
+shore-based recovery method before free sailing. Keep any temporary tether under
+control during near-shore tests; it must not create hazards or stand in for a
+workable sailing/recovery plan.</p>
+<h2>Manufacturing constraints</h2>
+<ul>
+<li>Manufacture at home with a <strong>Bambu A1 mini</strong> as the available 3D printer.</li>
+<li>The <a href="https://cdn1.bambulab.com/documentation/quick-start-f507128172bdf/Quick%20start%20guide%20-%20A1%20mini-EN.pdf">manufacturer's A1 mini guide</a> lists a nominal <strong>180 × 180 × 180 mm</strong> build volume.
+  Fit parts, joints, supports and adhesion margins in the actual slicer profile;
+  nominal machine limits are not the usable dimensions of every orientation.</li>
+<li>Treat printable shell thickness as a design constraint. Select actual values
+  after choosing material, nozzle, print settings and reinforcement approach.</li>
+<li>If the hull needs multiple prints, design their joints, alignment, sealing and
+  assembly access as part of the hull rather than as an afterthought.</li>
+<li>Account for the finished construction, including reinforcement, resin, joins
+  and fittings, when estimating dimensions and weight.</li>
+</ul>
+<h2>Initial component ideas</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Starting idea</th>
+<th>Decisions still open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hull</td>
+<td>Smaller sailboat inspired by the DragonForce 65</td>
+<td>Overall dimensions, hull form, target displacement, printed sections and deck arrangement</td>
+</tr>
+<tr>
+<td>Printed shell</td>
+<td>Thin printed structure with possible composite reinforcement</td>
+<td>Filament, thickness, print orientation, joints and whether the print remains in the finished hull or serves as tooling</td>
+</tr>
+<tr>
+<td>Keel</td>
+<td>Fin using a symmetric airfoil section</td>
+<td>Section, span, chord, thickness, attachment and structural load path</td>
+</tr>
+<tr>
+<td>Ballast</td>
+<td>Weight at the lower end of the keel</td>
+<td>Material, mass, shape, position and secure attachment</td>
+</tr>
+<tr>
+<td>Rudder</td>
+<td>Rudder integrated into the complete hull/appendage design</td>
+<td>Profile, area, stock, bearings, linkage and servo arrangement</td>
+</tr>
+<tr>
+<td>Mast</td>
+<td>Possibly a carbon rod</td>
+<td>Length, diameter, stiffness, support and attachment</td>
+</tr>
+<tr>
+<td>Sails and rigging</td>
+<td>Small RC sailboat rig</td>
+<td>Sail area, layout, materials, adjustment and control arrangement</td>
+</tr>
+<tr>
+<td>Internal equipment</td>
+<td>Radio control, power and sail/rudder actuation</td>
+<td>Components, access, waterproofing and their contribution to the mass budget</td>
+</tr>
+</tbody>
+</table>
+<p>The symmetric airfoil idea applies initially to the keel fin. Ballast shape and
+rudder section should be selected explicitly rather than assuming all underwater
+parts use the same profile.</p>
+<h2>Fiberglass and forming concept</h2>
+<p>The initial idea is to cover the printed construction with fiberglass and resin,
+then use a vacuum bag to consolidate/form the laminate.</p>
+<p>The material was described in the initial brief as <strong>“75oz fiberglass.”</strong> Preserve
+this as an unresolved specification: confirm the intended fabric weight and units
+before selecting materials or estimating laminate thickness and mass. Do not
+silently interpret it as another fabric weight.</p>
+<p>Confirm which parts receive reinforcement, the resin system, layer count and
+layup, and how the printed structure or tooling will be supported during bagging.
+The vacuum-bagging construction method is a candidate to test, not a settled
+manufacturing process.</p>
+<h2>Geometry and engineering questions</h2>
+<ul>
+<li>What size gives a useful small RC sailboat while remaining practical to print,
+  assemble and equip?</li>
+<li>What is the complete mass budget, including printed parts, laminate, resin,
+  keel, ballast, rig, battery and electronics?</li>
+<li>Where are the centres of mass and buoyancy for the intended draft, and what
+  flotation and stability checks are needed?</li>
+<li>How should hull shell thickness, local reinforcement and joints support the
+  keel, ballast, mast and rudder loads?</li>
+<li>How should the hull, keel and rudder geometry work together, including their
+  attachment details and watertight penetrations?</li>
+<li>What can be checked geometrically or with hand calculations, and what needs
+  structural analysis, flow simulation or a physical test?</li>
+</ul>
+<h2>Flow analysis direction</h2>
+<p>Begin with clearly bounded studies of underwater appendages and, where useful,
+an explicitly submerged hull/keel/rudder assembly. Compare geometry variants at
+consistent physical conditions and inspect pressure, wake and vector-field slices.</p>
+<p>A submerged single-fluid case does not represent the complete sailing boat at
+the water surface. Surface waves, flotation, heel/trim response and sail-driven
+motion need their own appropriate models or experiments. Likewise, CFD does not
+establish shell strength or printability; keep the manufacturing, structural and
+hydrostatic checks explicit.</p>
+<h2>First design outputs</h2>
+<ol>
+<li>A dimensioned concept and assembly layout in Rhino, with the reference boat
+   and intended size reduction recorded.</li>
+<li>A preliminary component mass budget and flotation/stability assessment.</li>
+<li>A print layout showing build-volume fit, hull segmentation and assembly joints.</li>
+<li>A proposed shell/reinforcement construction, supported by small print and
+   laminate trials before committing to a complete hull.</li>
+<li>Parametric hull, keel, ballast and rudder geometry with clearly recorded inputs.</li>
+<li>A bounded simulation and physical-test plan tied to specific design questions.</li>
+</ol>
+<h2>Decisions to make next</h2>
+<p>Choose the overall size or target displacement; confirm printer build limits;
+select an initial construction approach; clarify the fiberglass specification;
+and estimate the equipment, rig and ballast masses. These decisions should guide
+the first hull geometry rather than treating the project as a purely scaled mesh.</p>
+<h2>Validation and evidence</h2>
+<p>Follow the <a href="build-plan.html">build and test plan</a>: site/access and recovery
+check; equipment mass budget; hydrostatics and stability; print/bond/laminate
+coupons; dry assembly and controls; controlled leak/flotation/heel tests; then
+short sailing trials within recovery reach. Record configuration and acceptance
+criteria before each test, including failures. Do not call the design validated
+because a CAD assembly looks complete or a CFD image looks plausible.</p>
+<p>The first physical success is a recoverable boat that floats to its predicted
+trim, stays dry in a controlled leak test, responds reliably to steering and sail
+trim, and sails and tacks under recorded conditions without grounding. Speed,
+racing class compliance and optimization are secondary to an operable first boat.
+No tests have yet passed and no wind rating is assigned.</p>
+<h2>Documentation, licensing and co-creation</h2>
+<p>Maintain editable CAD and parametric source, neutral exports, drawings, BOM,
+print/laminate settings, assembly instructions and a dated build journal tied to
+revision IDs. The GitHub Pages site should explain the intent and document the
+actual making, including failed prints and rejected designs. It must distinguish
+planned work from completed work and renders from photographs.</p>
+<p>Be explicit that the project is <a href="ai-co-creation.html">co-created with AI</a>.
+Record tools, consequential suggestions, human checks and measured outcomes. AI
+is part of the experiment, not a hidden author or a substitute for validation.</p>
+<p>The owner requires commercial permission separately from the public grants.
+Original CAD and documentation use CC BY-NC-SA 4.0; software uses PolyForm
+Noncommercial 1.0.0. Preserve attribution and third-party provenance. See
+<a href="LICENSE.html">LICENSE.md</a> for exact scope and legal limitations, and
+<a href="DISCLAIMER.html">DISCLAIMER.md</a> for the experimental, as-is notice. Neither a
+license nor a disclaimer guarantees zero liability or control over every
+functional physical design.</p>
+<p>Track resolutions in the <a href="decisions.html">decision register</a>. Before a
+first detailed hull, prioritize the site survey and equipment masses, then choose
+displacement, draft/ballast architecture and rig together.</p></main>
+<footer><span>An experiment in CAD, AI co-creation and making.</span><a href="LICENSE.html">Licenses & attribution</a><a href="DISCLAIMER.html">Experimental-use notice</a></footer>
+</body></html>
