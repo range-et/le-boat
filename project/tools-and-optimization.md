@@ -4,10 +4,15 @@ Updated November 8, 2026.
 
 ## CAD
 
-I’m using Rhino and Grasshopper for geometry, with [git-cad](https://github.com/range-et/git-cad) for CAD management.
+I’m using Rhino, Grasshopper and Blender for geometry, with [git-cad](https://github.com/range-et/git-cad) for CAD management.
 The git-cad project is in specification/prototype development.
 Its setup for this boat remains pending.
 Reference revision: [97b8143](https://github.com/range-et/git-cad/tree/97b81437a5142bcb9dba4cdee71a97eb93bab12c).
+
+## Print preparation
+
+I’m using Orca Slicer to prepare prints for the Bambu A1 mini.
+Print settings and orientations will be recorded with the build notes.
 
 ## CFD
 

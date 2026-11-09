@@ -23,7 +23,8 @@ I’m considering fiberglass and resin reinforcement for the printed hull.
 
 ## Tools
 
-- Rhino and Grasshopper for geometry.
+- Rhino, Grasshopper and Blender for geometry.
+- Orca Slicer for print preparation.
 - [git-cad](https://github.com/range-et/git-cad) for CAD management.
 - [Hawa](https://github.com/range-et/hawa-cfd) for hull and appendage CFD.
 - [Monad System](https://github.com/range-et/monad_system) for the website UI.

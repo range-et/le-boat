@@ -9,7 +9,8 @@ Updated November 8, 2026.
 | Hull and rig | Dimensions and layout are still open. The DragonForce 65 is an initial reference. |
 | Keel and ballast | Shallow-water arrangement still to be explored. |
 | Construction | Printed parts, with possible fiberglass/resin reinforcement. |
-| CAD | Rhino and Grasshopper, with git-cad for management. Setup is pending. |
+| CAD | Rhino, Grasshopper and Blender. git-cad setup is pending. |
+| Print preparation | Orca Slicer for the Bambu A1 mini. |
 | CFD | Hawa for hull and appendage experiments. Boat cases are pending. |
 | Website | Build journal on GitHub Pages, using Monad System. |
 | Collaboration | Ideas, experiments and contributions are welcome. |

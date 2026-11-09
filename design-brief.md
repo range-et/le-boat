@@ -32,7 +32,8 @@ The original “75oz fiberglass” material note needs clarification.
 
 ## Tools
 
-- Rhino and Grasshopper for geometry.
+- Rhino, Grasshopper and Blender for geometry.
+- Orca Slicer for print preparation.
 - [git-cad](https://github.com/range-et/git-cad) for CAD management.
 - [Hawa](https://github.com/range-et/hawa-cfd) for flow studies around the hull, keel and rudder.
 - [Monad System](https://github.com/range-et/monad_system) for the website UI.
