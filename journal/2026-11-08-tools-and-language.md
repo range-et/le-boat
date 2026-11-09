@@ -1,22 +1,16 @@
-# 002 — Tool selection and documentation update
+# 002 — Tools for the build
 
-November 8, 2026 · Phase: brief and website
+November 8, 2026 · Early design
 
-The owner selected git-cad for CAD management, Monad System for website UI, and Hawa for CFD.
-git-cad remains in specification/prototype development.
-Its Le Boat setup awaits an available workflow.
-Hull, keel and rudder CFD cases remain pending.
+I’ve selected git-cad for CAD management, Hawa for CFD and Monad System for the website UI.
+Rhino and Grasshopper will be the main geometry tools.
 
-The website now uses pinned Monad CSS, JavaScript, tokens and components.
-The upstream MIT license accompanies these files.
-The documentation defines baseline comparisons, optimization measures, constraints and required evidence.
-Collaboration remains open through issues and pull requests.
+The website now uses Monad’s CSS, JavaScript and theme controls.
+The source files and MIT license are included in the repository.
 
-The owner requested short, direct English.
-The site and project documents now use literal descriptions and shorter sentences.
-The homepage title is “RC sailboat for Love Park”.
+git-cad is in specification/prototype development, so its setup for this boat is still ahead.
+Hawa will help explore flow around the hull, keel and rudder once there is geometry to work with.
+I’ll record the design changes and experiments here as they happen.
 
-AI use: Codex reviewed the selected repositories and changed the documentation and website.
-The Monad ASD-STE100 skill guided the language review.
-This review does not establish full compliance with the official ASD dictionary.
-Boat geometry, simulation results, fabrication and physical tests remain pending.
+Ideas and contributions are welcome.
+Codex helped with the tool review and website changes.
