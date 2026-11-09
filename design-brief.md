@@ -52,6 +52,7 @@ Next I’ll explore the hull layout, equipment weight and a shallow keel/ballast
 
 I’m developing this project with AI tools and documenting their contribution.
 Codex helped with the research, documentation and website.
+Amp Code also helped with earlier coding.
 The [build journal](journal/2026-11-08-project-foundation.md) will record design choices, progress and problems as they occur.
 Ideas and contributions are welcome through [GitHub](https://github.com/range-et/le-boat/issues).
 

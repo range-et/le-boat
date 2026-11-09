@@ -3,6 +3,7 @@
 People and AI tools develop Le Boat together.
 The project records how these tools affect design work, fabrication and tests.
 Codex helped with research, documentation and website code.
+Amp Code also helped with earlier coding.
 CAD work, boat simulations and physical tests remain pending.
 
 ## Evidence records

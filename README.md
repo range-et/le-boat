@@ -31,6 +31,7 @@ I’m considering fiberglass and resin reinforcement for the printed hull.
 The [tool notes](project/tools-and-optimization.md) record versions and setup.
 AI tools are part of the build process.
 Codex helped with research, documentation and the website.
+Amp Code also helped with earlier coding.
 
 ## Follow the build
 
